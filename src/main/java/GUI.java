@@ -155,7 +155,7 @@ public class GUI {
 	}
 	private void bomen(){
 		
-		JLabel lblNewLabel = new JLabel("");
+		final JLabel lblNewLabel = new JLabel("");
 		
 		lblNewLabel.setBounds(10, 62, 730, 546);
 		
@@ -170,7 +170,7 @@ public class GUI {
 		scrollPane.setBounds(758, 62, 321, 546);
 		frame.getContentPane().add(scrollPane);
 		
-		JList bomenLijst = new JList(plattegrondBomenLijst());
+		final JList bomenLijst = new JList(plattegrondBomenLijst());
 		scrollPane.setViewportView(bomenLijst);
 		
 		bomenLijst.addListSelectionListener(new ListSelectionListener() {
@@ -362,7 +362,7 @@ public class GUI {
 		
 	
 	private void siertuin(){
-		JLabel lblNewLabel = new JLabel("");
+		final JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setBounds(10, 62, 730, 746);
 		frame.getContentPane().add(lblNewLabel);
 		
@@ -375,7 +375,7 @@ public class GUI {
 		scrollPane.setBounds(758, 62, 321, 546);
 		frame.getContentPane().add(scrollPane);
 		
-		JList plantenLijst2 = new JList(plattegrondSiertuin());
+		final JList plantenLijst2 = new JList(plattegrondSiertuin());
 		scrollPane.setViewportView(plantenLijst2);	
 		
 		plantenLijst2.addListSelectionListener(new ListSelectionListener() {
@@ -576,7 +576,7 @@ public class GUI {
 		
 		
 		
-		JScrollPane scrollPane = new JScrollPane();
+		final JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(23, 152, 295, 356);
 		alfabetisch.add(scrollPane);
 		plantenLijst = new JList(oneRow(column));
@@ -591,7 +591,7 @@ public class GUI {
 		scrollPane_1.setBounds(330, 152, 627, 456);
 		alfabetisch.add(scrollPane_1);
 		
-		JTextPane plantInfo = new JTextPane();
+		final JTextPane plantInfo = new JTextPane();
 		plantInfo.setEditable(false);
 		scrollPane_1.setViewportView(plantInfo);
 		
@@ -603,7 +603,7 @@ public class GUI {
 		kopjeLijstPlanten.setColumns(10);		
 		
 		
-		Button button_3 = new Button("Sorteren op referentie");
+		final Button button_3 = new Button("Sorteren op referentie");
 		
 		button_3.setBounds(330, 101, 276, 23);
 		alfabetisch.add(button_3);
