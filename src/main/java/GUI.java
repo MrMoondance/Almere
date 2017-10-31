@@ -147,7 +147,7 @@ public class GUI {
 		});
 		btnSiertuin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				// hide bomen()
+				
 				
 				siertuin();
 			}
